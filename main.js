@@ -25,9 +25,9 @@ Mousetrap.bind('space', function() {
 document.addEventListener("touchstart", touch, true);
 function touch() {
   snowstorm.play();
+  avril.play();
   if (notStarted) {
     setTimeout(function(){
-      avril.play();
       placeText();
     }, 1000);
     $('header').fadeOut(1000);
