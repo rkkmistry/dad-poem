@@ -24,10 +24,10 @@ Mousetrap.bind('space', function() {
 //mobile functionality
 document.addEventListener("touchstart", touch, true);
 function touch() {
+  snowstorm.play();
   if (notStarted) {
     setTimeout(function(){
-      $('#audio')[0].play();
-      $('#bg-audio')[0].play();
+      avril.play();
       placeText();
     }, 1000);
     $('header').fadeOut(1000);
